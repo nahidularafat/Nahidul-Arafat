@@ -1,4 +1,4 @@
-﻿"""
+"""
 Data seed script â€” populates the Django database with all
 the hardcoded portfolio content from the original React components.
 
@@ -23,9 +23,15 @@ from portfolio.models import (
     TechCategory, Tech, Stat,
 )
 
-print("ðŸŒ± Seeding database...")
+# Prevent duplicate seeding
+import sys
+if Profile.objects.exists():
+    print("Database already seeded. Skipping.")
+    sys.exit(0)
 
-# â”€â”€â”€ Clear existing data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+print("🌱 Seeding database...")
+
+# ————————————————————————————————————————————————————————————————————————
 Profile.objects.all().delete()
 SocialLink.objects.all().delete()
 Project.objects.all().delete()
