@@ -1,0 +1,18 @@
+# React/Node
+node_modules/
+dist/
+dist-ssr/
+*.local
+
+# Django/Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.sqlite3
+venv/
+env/
+.env
+
+# OS Files
+.DS_Store
+Thumbs.db

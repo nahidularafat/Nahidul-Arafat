@@ -1,0 +1,96 @@
+.expertise-section {
+  padding: 100px 0;
+  position: relative;
+  z-index: 10;
+}
+
+.expertise-container h2 {
+  font-size: calc(4vw + 25px);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.expertise-container h2 span {
+  color: var(--accentColor, #8B5CF6);
+  font-style: italic;
+}
+
+.expertise-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Wire and Light */
+.wire-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+
+.wire {
+  width: 100px;
+  height: 4px;
+  background-color: #555;
+  border-radius: 2px;
+}
+
+.light {
+  width: 30px;
+  height: 30px;
+  background-color: #333;
+  border-radius: 50%;
+  border: 2px solid #555;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+/* The Glow Effect on Hover */
+.light:hover {
+  background-color: #fffa86;
+  border-color: #fffa86;
+  box-shadow: 0 0 20px #fffa86, 0 0 40px #fffa86, 0 0 60px #fffa86;
+}
+
+.expertise-box {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 40px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+}
+
+.expertise-item h3 {
+  margin: 0 0 5px 0;
+  font-size: 24px;
+  color: #fff;
+}
+
+.expertise-item p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .expertise-content {
+    flex-direction: column;
+  }
+  .wire-container {
+    flex-direction: column;
+  }
+  .wire {
+    width: 4px;
+    height: 100px;
+  }
+}
