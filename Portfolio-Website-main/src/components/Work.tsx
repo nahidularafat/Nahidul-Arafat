@@ -5,6 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useEffect } from "react";
 import { useApi } from "../hooks/useApi";
 import { getProjects } from "../services/api";
+import { Link } from "react-router-dom";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -89,7 +90,7 @@ const Work = () => {
           )}
 
           {projects &&
-            projects.map((project) => (
+            projects.slice(0, 5).map((project) => (
               <div className="work-box" key={project.id}>
                 <div className="work-info">
                   <div className="work-title">
@@ -114,6 +115,18 @@ const Work = () => {
                 />
               </div>
             ))}
+            
+          {projects && projects.length > 5 && (
+            <div className="work-box view-all-box">
+              <div className="view-all-content">
+                <h3>More Projects</h3>
+                <p>I have worked on {projects.length}+ projects ranging from corporate websites to AI tools.</p>
+                <Link to="/projects" className="view-all-btn">
+                  View All Projects
+                </Link>
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </div>

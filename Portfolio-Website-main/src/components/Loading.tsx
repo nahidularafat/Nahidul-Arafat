@@ -3,8 +3,11 @@ import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
 
 import Marquee from "react-fast-marquee";
+import { useApi } from "../hooks/useApi";
+import { getProfile } from "../services/api";
 
 const Loading = ({ percent }: { percent: number }) => {
+  const { data: profile } = useApi(getProfile);
   const { setIsLoading } = useLoading();
   const [loaded, setLoaded] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -46,7 +49,11 @@ const Loading = ({ percent }: { percent: number }) => {
     <>
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
-          Logo
+          {profile?.profile_image ? (
+            <img src={profile.profile_image} alt="Logo" className="loader-logo-img" />
+          ) : (
+            "Logo"
+          )}
         </a>
         <div className={`loaderGame ${clicked && "loader-out"}`}>
           <div className="loaderGame-container">
