@@ -1,8 +1,7 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getProjects } from "../services/api";
 import { useApi } from "../hooks/useApi";
-import WorkImage from "./WorkImage";
 import "./styles/AllProjects.css";
 import { FaArrowLeft } from "react-icons/fa";
 
