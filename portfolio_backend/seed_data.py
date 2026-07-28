@@ -25,9 +25,9 @@ from portfolio.models import (
 from django.contrib.auth.models import User
 
 # Auto-create superuser if it doesn't exist (since Render Free tier has no shell)
-if not User.objects.filter(username='admin').exists():
-    User.objects.create_superuser('admin', 'admin@admin.com', 'admin')
-    print("  ✓ Superuser 'admin' created automatically.")
+if not User.objects.filter(username='arafat').exists():
+    User.objects.create_superuser('arafat', 'arafat@example.com', '123456')
+    print("  ✓ Superuser 'arafat' created automatically.")
 
 # Prevent duplicate seeding (temporarily bypassed to re-seed images)
 import sys
