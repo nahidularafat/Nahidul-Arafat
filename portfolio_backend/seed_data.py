@@ -23,11 +23,12 @@ from portfolio.models import (
     TechCategory, Tech, Stat,
 )
 
-# Prevent duplicate seeding
+# Prevent duplicate seeding (temporarily bypassed to re-seed images)
 import sys
 if Profile.objects.exists():
-    print("Database already seeded. Skipping.")
-    sys.exit(0)
+    pass
+    # print("Database already seeded. Skipping.")
+    # sys.exit(0)
 
 print("🌱 Seeding database...")
 
@@ -54,6 +55,7 @@ Profile.objects.create(
     phone="+880 1974-337424",
     github_url="https://github.com/nahidularafat",
     linkedin_url="https://www.linkedin.com/in/nahidul-arafat-9ab8332ba",
+    profile_image="profile/Screenshot_2026-07-15_005939.png",
     resume_url="/resume.pdf",
     copyright_year="2025",
 )
@@ -81,6 +83,7 @@ projects_data = [
         "category": "Corporate Website",
         "tools": "Django, Python, Bootstrap",
         "link": "https://ondrobit.com/",
+        "image": "projects/Screenshot_2026-07-28_211739.png",
         "order": 0,
         "bullets": [
             "Designed and developed the main corporate website for Ondrobit, showcasing the company, its live-commerce platform, and contact channels.",
@@ -93,6 +96,7 @@ projects_data = [
         "category": "E-commerce Platform",
         "tools": "Django, Python, Bootstrap, SQLite/MySQL",
         "link": "https://shop.ondrobit.com/",
+        "image": "projects/Screenshot_2026-07-28_211821.png",
         "order": 1,
         "bullets": [
             "Developed a full-featured e-commerce platform with a mobile-first UI.",
@@ -108,6 +112,7 @@ projects_data = [
         "category": "Mental Health Conversational Agent",
         "tools": "LangChain, LangGraph, PyTorch, Gemini API, Django",
         "link": "https://github.com/nahidularafat/AI-Mental-Health-Agent-Clinical-Assessment-Tool",
+        "image": "projects/615750723-0b9617d8-7d13-42cd-970f-ec0b417944be.png",
         "order": 2,
         "bullets": [
             "Engineered an intelligent ReAct-based conversational agent using LangGraph and Gemini API.",
