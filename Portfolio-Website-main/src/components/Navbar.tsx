@@ -53,7 +53,7 @@ const Navbar = () => {
       <div className="header">
         <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
           <img
-            src={profileImage}
+            src={profile?.profile_image || "https://github.com/nahidularafat.png"}
             alt="Profile"
             style={{
               width: "45px",
