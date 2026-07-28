@@ -18,10 +18,16 @@ os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'portfolio_backend.settings')
 django.setup()
 
 from portfolio.models import (
-    Profile, SocialLink, Project, ProjectBullet,
+    Profile, SocialLink, ExpertiseItem, Project, ProjectBullet,
     CareerEntry, Achievement, AboutSkill, ExpertiseArea,
     TechCategory, Tech, Stat,
 )
+from django.contrib.auth.models import User
+
+# Auto-create superuser if it doesn't exist (since Render Free tier has no shell)
+if not User.objects.filter(username='admin').exists():
+    User.objects.create_superuser('admin', 'admin@admin.com', 'admin')
+    print("  ✓ Superuser 'admin' created automatically.")
 
 # Prevent duplicate seeding (temporarily bypassed to re-seed images)
 import sys
