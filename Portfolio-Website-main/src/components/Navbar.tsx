@@ -14,7 +14,6 @@ const Navbar = () => {
   const { data: profile } = useApi(getProfile);
 
   const email = profile?.email ?? "nahidularaf@gmail.com";
-  const profileImage = profile?.profile_image ?? "/profile.jpg";
   const resumeUrl = profile?.resume_url ?? "/resume.pdf";
 
   useEffect(() => {
