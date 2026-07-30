@@ -62,7 +62,7 @@ Profile.objects.create(
     github_url="https://github.com/nahidularafat",
     linkedin_url="https://www.linkedin.com/in/nahidul-arafat-9ab8332ba",
     profile_image="profile/Screenshot_2026-07-15_005939.png",
-    resume_url="https://drive.google.com/file/d/1cxb1GxYEot-rmk7ldR4EkWDs_dj4C4LV/view",
+    resume_url="https://drive.google.com/file/d/1iELIBj_IOJVYadVuzDNBlrRx0QywDjE2/view",
     copyright_year="2025",
 )
 print("  âœ“ Profile created")
