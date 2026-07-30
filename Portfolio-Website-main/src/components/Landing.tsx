@@ -54,7 +54,7 @@ const Landing = ({ children }: PropsWithChildren) => {
 
           <div className="mobile-profile-wrapper">
             <img
-              src={profile?.profile_image ?? "/profile.jpg"}
+              src={profile?.profile_image ? (profile.profile_image.includes("/media/profile/") ? "/profile/" + profile.profile_image.split("/media/profile/")[1] : profile.profile_image) : "https://github.com/nahidularafat.png"}
               alt={profile?.name ?? "Nahidul Arafat"}
               className="mobile-profile-pic"
             />
