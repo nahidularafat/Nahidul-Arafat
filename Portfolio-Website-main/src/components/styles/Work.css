@@ -12,7 +12,7 @@
 }
 
 .work-section h2 {
-  font-size: 80px;
+  font-size: 65px;
   font-weight: 500;
   margin: 0;
   line-height: 1;
@@ -51,14 +51,15 @@
    WORK BOX
 ======================== */
 .work-box {
-  padding: 44px 60px 50px 60px;
+  padding: 30px 45px 35px 45px;
   display: flex;
   flex-direction: column;
-  width: 720px;
+  width: 600px;
+  height: 100%;
   box-sizing: border-box;
   border-right: 1px solid #363636;
   flex-shrink: 0;
-  gap: 24px;
+  gap: 20px;
   justify-content: start;
 }
 .work-flex .work-box:nth-child(even) {
@@ -82,6 +83,27 @@
 /* ========================
    WORK INFO — TEXT
 ======================== */
+.work-info {
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  padding-right: 15px; /* space for scrollbar */
+  flex-shrink: 1;
+}
+
+/* Custom Scrollbar for .work-info */
+.work-info::-webkit-scrollbar {
+  width: 4px;
+}
+.work-info::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+}
+.work-info::-webkit-scrollbar-thumb {
+  background: rgba(168, 85, 247, 0.4);
+  border-radius: 10px;
+}
+
 .work-title {
   justify-content: space-between;
   display: flex;
@@ -92,7 +114,7 @@
   text-align: right;
 }
 .work-title h3 {
-  font-size: 64px;
+  font-size: 54px;
   line-height: 1;
   margin: 0;
   font-weight: 700;
@@ -151,6 +173,7 @@
   display: flex;
   width: 100%;
   justify-content: center;
+  flex-shrink: 0;
 }
 .work-image-in {
   position: relative;

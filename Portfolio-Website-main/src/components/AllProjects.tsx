@@ -2,15 +2,18 @@ import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import { getProjects } from "../services/api";
 import { useApi } from "../hooks/useApi";
+import { useLoading } from "../context/LoadingProvider";
 import "./styles/AllProjects.css";
 import { FaArrowLeft } from "react-icons/fa";
 
 const AllProjects = () => {
   const { data: projects, loading, error } = useApi(getProjects);
+  const { setIsLoading } = useLoading();
 
   useEffect(() => {
+    setIsLoading(false);
     window.scrollTo(0, 0);
-  }, []);
+  }, [setIsLoading]);
 
   return (
     <div className="all-projects-page">

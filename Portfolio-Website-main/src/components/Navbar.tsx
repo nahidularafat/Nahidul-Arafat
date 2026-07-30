@@ -6,12 +6,15 @@ import { ScrollSmoother } from "gsap/ScrollSmoother";
 import "./styles/Navbar.css";
 import { useApi } from "../hooks/useApi";
 import { getProfile } from "../services/api";
+import { useLoading } from "../context/LoadingProvider";
+import { initialFX } from "./utils/initialFX";
 
 gsap.registerPlugin(ScrollSmoother, ScrollTrigger);
 export let smoother: ScrollSmoother;
 
 const Navbar = () => {
   const { data: profile } = useApi(getProfile);
+  const { isLoading } = useLoading();
 
   const email = profile?.email ?? "nahidularaf@gmail.com";
   const resumeUrl = profile?.resume_url ?? "/resume.pdf";
@@ -27,10 +30,14 @@ const Navbar = () => {
       ignoreMobileResize: true,
     });
 
-    smoother.scrollTop(0);
-    smoother.paused(true);
+    if (isLoading) {
+      smoother.scrollTop(0);
+      smoother.paused(true);
+    } else {
+      initialFX();
+    }
 
-    let links = document.querySelectorAll(".header ul a");
+    let links = document.querySelectorAll(".header ul a[data-href]");
     links.forEach((elem) => {
       let element = elem as HTMLAnchorElement;
       element.addEventListener("click", (e) => {
@@ -38,7 +45,7 @@ const Navbar = () => {
           e.preventDefault();
           let elem = e.currentTarget as HTMLAnchorElement;
           let section = elem.getAttribute("data-href");
-          smoother.scrollTo(section, true, "top top");
+          if (section) smoother.scrollTo(section, true, "top top");
         }
       });
     });

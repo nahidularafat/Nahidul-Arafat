@@ -8,9 +8,14 @@ interface Props {
   link?: string;
 }
 
+const FALLBACK = "/images/placeholder.webp";
+
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
+  const [imgSrc, setImgSrc] = useState(props.image || FALLBACK);
+  const [errored, setErrored] = useState(false);
+
   const handleMouseEnter = async () => {
     if (props.video) {
       setIsVideo(true);
@@ -21,14 +26,25 @@ const WorkImage = (props: Props) => {
     }
   };
 
+  // When image URL changes (e.g. after API fetch), reset state
+  const src = props.image || FALLBACK;
+
+  const handleError = () => {
+    if (!errored) {
+      setErrored(true);
+      setImgSrc(FALLBACK);
+    }
+  };
+
   return (
     <div className="work-image">
       <a
         className="work-image-in"
-        href={props.link}
+        href={props.link || undefined}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={() => setIsVideo(false)}
         target="_blank"
+        rel="noopener noreferrer"
         data-cursor={"disable"}
       >
         {props.link && (
@@ -36,7 +52,12 @@ const WorkImage = (props: Props) => {
             <MdArrowOutward />
           </div>
         )}
-        <img src={props.image} alt={props.alt} />
+        <img
+          src={errored ? FALLBACK : src}
+          alt={props.alt || "Project screenshot"}
+          onError={handleError}
+          loading="lazy"
+        />
         {isVideo && <video src={video} autoPlay muted playsInline loop></video>}
       </a>
     </div>

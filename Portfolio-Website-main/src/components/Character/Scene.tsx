@@ -20,6 +20,8 @@ const Scene = () => {
   const { setLoading } = useLoading();
 
   const [character, setChar] = useState<THREE.Object3D | null>(null);
+
+  // ── Three.js setup ──────────────────────────────────────────────
   useEffect(() => {
     if (canvasDiv.current) {
       let rect = canvasDiv.current.getBoundingClientRect();
@@ -106,6 +108,7 @@ const Scene = () => {
         landingDiv.addEventListener("touchstart", onTouchStart);
         landingDiv.addEventListener("touchend", onTouchEnd);
       }
+
       const animate = () => {
         requestAnimationFrame(animate);
         if (headBone) {
@@ -126,6 +129,7 @@ const Scene = () => {
         renderer.render(scene, camera);
       };
       animate();
+
       return () => {
         clearTimeout(debounce);
         scene.clear();
@@ -143,6 +147,40 @@ const Scene = () => {
         }
       };
     }
+  }, []);
+
+  // ── Show/hide avatar when scrolling (desktop only) ──────────────
+  // Problem: character-model is position:fixed, so when scrolling
+  // back up it overlaps the landing text.
+  // Solution: listen to scroll, hide when past landing section.
+  useEffect(() => {
+    if (window.innerWidth <= 1024) return;
+
+    const el = canvasDiv.current;
+    if (!el) return;
+
+    const landingDiv = document.getElementById("landingDiv");
+    // landing section height (100vh)
+    const landingH = landingDiv?.offsetHeight ?? window.innerHeight;
+
+    const onScroll = () => {
+      // Use scrollY on window (works with both native and smoother)
+      const sy = window.scrollY;
+      if (sy < landingH * 0.9) {
+        // Inside landing — show avatar
+        el.style.opacity = "1";
+        el.style.pointerEvents = "inherit";
+      } else {
+        // Past landing — hide avatar so text underneath is readable
+        el.style.opacity = "0";
+        el.style.pointerEvents = "none";
+      }
+    };
+
+    window.addEventListener("scroll", onScroll, { passive: true });
+    onScroll(); // run on mount
+
+    return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
   return (
