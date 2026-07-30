@@ -50,7 +50,7 @@ const Loading = ({ percent }: { percent: number }) => {
       <div className="loading-header">
         <a href="/#" className="loader-title" data-cursor="disable">
           <img 
-            src={profile?.profile_image || "https://github.com/nahidularafat.png"} 
+            src={profile?.profile_image ? (profile.profile_image.includes("/media/profile/") ? "/profile/" + profile.profile_image.split("/media/profile/")[1] : profile.profile_image) : "https://github.com/nahidularafat.png"}
             alt="Logo" 
             className="loader-logo-img" 
           />
