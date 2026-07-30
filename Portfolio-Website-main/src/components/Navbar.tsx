@@ -101,7 +101,6 @@ const Navbar = () => {
               href={resumeUrl}
               target="_blank"
               rel="noreferrer"
-              download
               className="nav-resume-btn"
               data-cursor="disable"
               style={{
