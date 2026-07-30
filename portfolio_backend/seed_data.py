@@ -168,22 +168,6 @@ for p in projects_data:
 print("  ✓ Projects & bullets created")
 
 # ——— Career Entries —————————————————————————————————————————————————————
-job_baraqa = CareerEntry.objects.create(
-    entry_type='job',
-    title='Founder & CEO',
-    organization='BARAQA_BIN - AI-IoT Smart Bin Startup',
-    org_url='',
-    period='Feb 2025 - Present',
-    description=(
-        "Founded and led BARAQA_BIN, an AI-IoT smart bin startup for educational institutions.\n"
-        "Designed a reward-based system where students receive rewards after throwing waste into the smart bin.\n"
-        "Integrated RFID, sensors, IoT components, and AI-based waste detection for smart monitoring.\n"
-        "Developed a MERN stack-based website/dashboard to track bin activity, manage users, and support reward-based participation.\n\n"
-        "Tools & Tech Stack: C++, Python, Django, FastAPI, MySQL, React.js, YOLOv8, ESP32-CAM, RFID."
-    ),
-    order=0,
-)
-
 job = CareerEntry.objects.create(
     entry_type='job',
     title='Software Developer',
@@ -195,7 +179,7 @@ job = CareerEntry.objects.create(
         "Contributing to database schema design and integration, improving query efficiency for product and order management modules. "
         "Collaborating with a remote team to ship maintainable, scalable features on a regular release cycle."
     ),
-    order=1,
+    order=0,
 )
 
 edu = CareerEntry.objects.create(
@@ -207,7 +191,7 @@ edu = CareerEntry.objects.create(
         "Computer Science graduate. Gained comprehensive knowledge in OOP, "
         "Data Structures & Algorithms, and modern web development architectures."
     ),
-    order=2,
+    order=1,
 )
 
 ach_entry = CareerEntry.objects.create(
@@ -215,7 +199,7 @@ ach_entry = CareerEntry.objects.create(
     title='Achievements & Competitions',
     organization='Hackathons & Olympiads',
     period='',
-    order=3,
+    order=2,
 )
 
 achievements = [

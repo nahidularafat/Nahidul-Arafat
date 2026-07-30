@@ -102,6 +102,7 @@ const SocialIcons = () => {
         href={profile?.resume_url || "/resume.pdf"}
         target="_blank"
         rel="noreferrer"
+        download
         data-cursor="disable"
       >
         <HoverLinks text="RESUME" />
