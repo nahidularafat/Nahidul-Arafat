@@ -71,13 +71,14 @@ print("  âœ“ Profile created")
 social_data = [
     ("github",   "Github",   "https://github.com/nahidularafat",                        "FaGithub",     0),
     ("linkedin", "LinkedIn", "https://www.linkedin.com/in/nahidul-arafat-9ab8332ba",    "FaLinkedinIn", 1),
-    ("codeforces","Codeforces","https://codeforces.com/profile/Arafat0012",             "FaCode",       2),
+    ("youtube",  "YouTube",  "https://www.youtube.com/@nahidul_arafat/videos",          "FaYoutube",    2),
+    ("codeforces","Codeforces","https://codeforces.com/profile/Arafat0012",             "FaCode",       3),
     ("codechef", "CodeChef", "https://www.codechef.com/users/nahidularaf",              "FaCode",       3),
 ]
 for platform, label, url, icon, order in social_data:
     SocialLink.objects.create(
         platform=platform, label=label, url=url, icon_name=icon,
-        order=order, is_active=(order < 2),  # Only GitHub & LinkedIn active by default
+        order=order, is_active=(order < 3),  # GitHub, LinkedIn, & YouTube active by default
     )
 print("  âœ“ Social links created")
 

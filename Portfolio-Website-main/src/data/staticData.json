@@ -39,6 +39,15 @@
       "is_active": true
     },
     {
+      "id": 13,
+      "platform": "youtube",
+      "label": "YouTube",
+      "url": "https://www.youtube.com/@nahidul_arafat/videos",
+      "icon_name": "FaYoutube",
+      "order": 2,
+      "is_active": true
+    },
+    {
       "id": 11,
       "platform": "codeforces",
       "label": "Codeforces",

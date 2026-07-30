@@ -2,6 +2,7 @@ import {
   FaGithub,
   FaLinkedinIn,
   FaCode,
+  FaYoutube,
 } from "react-icons/fa6";
 import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
@@ -16,6 +17,7 @@ const iconMap: Record<string, ReactElement> = {
   FaGithub: <FaGithub />,
   FaLinkedinIn: <FaLinkedinIn />,
   FaCode: <FaCode />,
+  FaYoutube: <FaYoutube />,
 };
 
 const SocialIcons = () => {
