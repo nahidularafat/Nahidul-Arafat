@@ -52,7 +52,7 @@ const Career = () => {
 
   if (loading) {
     return (
-      <div className="career-section section-container">
+      <div className="career-section section-container" id="career">
         <div className="career-container">
           <h2>
             My career <span>&</span>
@@ -77,7 +77,7 @@ const Career = () => {
   const achievementsEntry = entries?.find((e) => e.entry_type === "achievements");
 
   return (
-    <div className="career-section section-container">
+    <div className="career-section section-container" id="career">
       <div className="career-container">
         <h2>
           My career <span>&</span>
