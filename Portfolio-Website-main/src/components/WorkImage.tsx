@@ -26,7 +26,10 @@ const WorkImage = (props: Props) => {
   };
 
   // When image URL changes (e.g. after API fetch), reset state
-  const src = props.image || FALLBACK;
+  let src = props.image || FALLBACK;
+  if (src.includes("/media/projects/")) {
+    src = "/projects/" + src.split("/media/projects/")[1];
+  }
 
   const handleError = () => {
     if (!errored) {

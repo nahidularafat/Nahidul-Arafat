@@ -34,7 +34,10 @@ const AllProjects = () => {
             projects.map((project) => (
               <div className="all-projects-card" key={project.id}>
                 <div className="all-projects-image">
-                  <img src={project.image_url} alt={project.title} />
+                  <img 
+                    src={project.image_url.includes("/media/projects/") ? "/projects/" + project.image_url.split("/media/projects/")[1] : project.image_url} 
+                    alt={project.title} 
+                  />
                   {project.link && (
                     <a href={project.link} target="_blank" rel="noreferrer" className="all-projects-link">
                       View Project

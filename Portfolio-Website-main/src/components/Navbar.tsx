@@ -59,7 +59,7 @@ const Navbar = () => {
       <div className="header">
         <div style={{ display: "flex", alignItems: "center", gap: "15px" }}>
           <img
-            src={profile?.profile_image || "https://github.com/nahidularafat.png"}
+            src={profile?.profile_image ? (profile.profile_image.includes("/media/profile/") ? "/profile/" + profile.profile_image.split("/media/profile/")[1] : profile.profile_image) : "https://github.com/nahidularafat.png"}
             alt="Profile"
             style={{
               width: "45px",
