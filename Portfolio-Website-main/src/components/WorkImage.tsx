@@ -13,7 +13,6 @@ const FALLBACK = "/images/placeholder.webp";
 const WorkImage = (props: Props) => {
   const [isVideo, setIsVideo] = useState(false);
   const [video, setVideo] = useState("");
-  const [imgSrc, setImgSrc] = useState(props.image || FALLBACK);
   const [errored, setErrored] = useState(false);
 
   const handleMouseEnter = async () => {
@@ -32,7 +31,6 @@ const WorkImage = (props: Props) => {
   const handleError = () => {
     if (!errored) {
       setErrored(true);
-      setImgSrc(FALLBACK);
     }
   };
 

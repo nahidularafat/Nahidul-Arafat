@@ -171,7 +171,7 @@ print("  ✓ Projects & bullets created")
 job = CareerEntry.objects.create(
     entry_type='job',
     title='Software Developer',
-    organization='Ondrobit (Remote) — ondrobit.com',
+    organization='Ondrobit — ondrobit.com',
     org_url='https://ondrobit.com/',
     period='Present',
     description=(

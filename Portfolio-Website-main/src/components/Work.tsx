@@ -91,7 +91,6 @@ const Work = () => {
   }, [projects]);
 
   const displayProjects = projects ? projects.slice(0, 5) : [];
-  const hasMore = projects && projects.length > 5;
 
   return (
     <div className="work-section" id="work">
