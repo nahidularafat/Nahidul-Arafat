@@ -71,7 +71,7 @@ print("  âœ“ Profile created")
 social_data = [
     ("github",   "Github",   "https://github.com/nahidularafat",                        "FaGithub",     0),
     ("linkedin", "LinkedIn", "https://www.linkedin.com/in/nahidul-arafat-9ab8332ba",    "FaLinkedinIn", 1),
-    ("youtube",  "YouTube",  "https://www.youtube.com/@nahidul_arafat/videos",          "FaYoutube",    2),
+    ("youtube",  "YouTube",  "https://www.youtube.com/@nahidul_arafat/featured",          "FaYoutube",    2),
     ("codeforces","Codeforces","https://codeforces.com/profile/Arafat0012",             "FaCode",       3),
     ("codechef", "CodeChef", "https://www.codechef.com/users/nahidularaf",              "FaCode",       3),
 ]
