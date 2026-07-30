@@ -141,6 +141,22 @@ projects_data = [
             "Built real-time bus status updates with dynamic UI rendering.",
         ],
     },
+    {
+        "number": "05",
+        "title": "BARAQA_BIN",
+        "category": "AI-IoT Smart Bin Startup",
+        "tools": "C++, Python, Django, YOLOv8, ESP32-CAM, React.js, MySQL, FastAPI, RFID",
+        "link": "",
+        "image": "projects/baraqa_bin.png",
+        "order": 4,
+        "bullets": [
+            "Bangladesh's waste crisis is not a knowledge problem — it is a habit problem. We decided to solve it from the very root: childhood.",
+            "If a child learns to dispose waste correctly from an early age, that behavior stays for life. When an entire generation grows up with this habit, Bangladesh will not need enforcement — cleanliness will simply become their nature.",
+            "BARAQA_BIN makes this possible. Students earn reward points every time they use the correct bin. A live leaderboard creates healthy daily competition.",
+            "Achievement badges like \"Eco Warrior\" celebrate consistency. Monthly rewards include canteen discounts and tuition fee waivers — making responsible behavior genuinely worthwhile.",
+            "We collaborate with schools to make this a natural daily routine — not an extra activity. One habit. One generation. One clean Bangladesh."
+        ],
+    },
 ]
 
 for p in projects_data:
@@ -149,13 +165,29 @@ for p in projects_data:
     for i, text in enumerate(bullets):
         ProjectBullet.objects.create(project=project, text=text, order=i)
 
-print("  âœ“ Projects & bullets created")
+print("  ✓ Projects & bullets created")
 
-# â”€â”€â”€ Career Entries â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+# ——— Career Entries —————————————————————————————————————————————————————
+job_baraqa = CareerEntry.objects.create(
+    entry_type='job',
+    title='Founder & CEO',
+    organization='BARAQA_BIN - AI-IoT Smart Bin Startup',
+    org_url='',
+    period='Feb 2025 - Present',
+    description=(
+        "Founded and led BARAQA_BIN, an AI-IoT smart bin startup for educational institutions.\n"
+        "Designed a reward-based system where students receive rewards after throwing waste into the smart bin.\n"
+        "Integrated RFID, sensors, IoT components, and AI-based waste detection for smart monitoring.\n"
+        "Developed a MERN stack-based website/dashboard to track bin activity, manage users, and support reward-based participation.\n\n"
+        "Tools & Tech Stack: C++, Python, Django, FastAPI, MySQL, React.js, YOLOv8, ESP32-CAM, RFID."
+    ),
+    order=0,
+)
+
 job = CareerEntry.objects.create(
     entry_type='job',
     title='Software Developer',
-    organization='Ondrobit (Remote) â€” ondrobit.com',
+    organization='Ondrobit (Remote) — ondrobit.com',
     org_url='https://ondrobit.com/',
     period='Present',
     description=(
@@ -163,7 +195,7 @@ job = CareerEntry.objects.create(
         "Contributing to database schema design and integration, improving query efficiency for product and order management modules. "
         "Collaborating with a remote team to ship maintainable, scalable features on a regular release cycle."
     ),
-    order=0,
+    order=1,
 )
 
 edu = CareerEntry.objects.create(
@@ -175,7 +207,7 @@ edu = CareerEntry.objects.create(
         "Computer Science graduate. Gained comprehensive knowledge in OOP, "
         "Data Structures & Algorithms, and modern web development architectures."
     ),
-    order=1,
+    order=2,
 )
 
 ach_entry = CareerEntry.objects.create(
@@ -183,7 +215,7 @@ ach_entry = CareerEntry.objects.create(
     title='Achievements & Competitions',
     organization='Hackathons & Olympiads',
     period='',
-    order=2,
+    order=3,
 )
 
 achievements = [
