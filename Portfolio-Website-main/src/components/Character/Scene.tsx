@@ -166,12 +166,20 @@ const Scene = () => {
     const onScroll = () => {
       // Use scrollY on window (works with both native and smoother)
       const sy = window.scrollY;
-      if (sy < landingH * 0.9) {
-        // Inside landing — show avatar
+      const careerSection = document.getElementById("career");
+      
+      let threshold = landingH * 0.9;
+      if (careerSection) {
+        // Hide character when we scroll near the career section
+        threshold = careerSection.offsetTop - (window.innerHeight * 0.6);
+      }
+
+      if (sy < threshold) {
+        // Inside landing, about, or whatido — show avatar
         el.style.opacity = "1";
         el.style.pointerEvents = "inherit";
       } else {
-        // Past landing — hide avatar so text underneath is readable
+        // Past whatido — hide avatar so it doesn't overlap career/work
         el.style.opacity = "0";
         el.style.pointerEvents = "none";
       }
