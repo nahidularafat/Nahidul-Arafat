@@ -1,0 +1,687 @@
+{
+  "profile": {
+    "id": 3,
+    "name": "Nahidul Arafat",
+    "first_name": "NAHIDUL",
+    "last_name": "ARAFAT",
+    "tagline": "A Passionate",
+    "role_line1": "FULL STACK",
+    "role_line2": "ENGINEER",
+    "bio": "A passionate Full Stack Engineer specializing in Python, Django, and React. I build scalable web platforms, AI-powered agents, and real-world mobile applications.",
+    "email": "nahidularaf@gmail.com",
+    "phone": "+880 1974-337424",
+    "location": "Dhaka, Bangladesh",
+    "github_url": "https://github.com/nahidularafat",
+    "linkedin_url": "https://www.linkedin.com/in/nahidul-arafat-9ab8332ba",
+    "codeforces_url": "https://codeforces.com/profile/Arafat0012",
+    "codechef_url": "https://www.codechef.com/users/nahidularaf",
+    "profile_image": "/media/profile/Screenshot_2026-07-15_005939.png",
+    "resume_url": "https://drive.google.com/file/d/1GSEpUAikApGefwtpTg34FD7l_o41WM3e/view",
+    "copyright_year": "2025"
+  },
+  "socialLinks": [
+    {
+      "id": 9,
+      "platform": "github",
+      "label": "Github",
+      "url": "https://github.com/nahidularafat",
+      "icon_name": "FaGithub",
+      "order": 0,
+      "is_active": true
+    },
+    {
+      "id": 10,
+      "platform": "linkedin",
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/nahidul-arafat-9ab8332ba",
+      "icon_name": "FaLinkedinIn",
+      "order": 1,
+      "is_active": true
+    },
+    {
+      "id": 11,
+      "platform": "codeforces",
+      "label": "Codeforces",
+      "url": "https://codeforces.com/profile/Arafat0012",
+      "icon_name": "FaCode",
+      "order": 2,
+      "is_active": false
+    },
+    {
+      "id": 12,
+      "platform": "codechef",
+      "label": "CodeChef",
+      "url": "https://www.codechef.com/users/nahidularaf",
+      "icon_name": "FaCode",
+      "order": 3,
+      "is_active": false
+    }
+  ],
+  "projects": [
+    {
+      "id": 11,
+      "number": "01",
+      "title": "Ondrobit \u00e2\u20ac\u201d Company Website",
+      "category": "Corporate Website",
+      "tools": "Django, Python, Bootstrap",
+      "image_url": "/media/projects/Screenshot_2026-07-28_211739.png",
+      "link": "https://ondrobit.com/",
+      "order": 0,
+      "bullets": [
+        {
+          "id": 41,
+          "text": "Designed and developed the main corporate website for Ondrobit, showcasing the company, its live-commerce platform, and contact channels.",
+          "order": 0
+        },
+        {
+          "id": 42,
+          "text": "Ensured a responsive, brand-forward design.",
+          "order": 1
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "number": "02",
+      "title": "Ondrobit Shop",
+      "category": "E-commerce Platform",
+      "tools": "Django, Python, Bootstrap, SQLite/MySQL",
+      "image_url": "/media/projects/Screenshot_2026-07-28_211821.png",
+      "link": "https://shop.ondrobit.com/",
+      "order": 1,
+      "bullets": [
+        {
+          "id": 43,
+          "text": "Developed a full-featured e-commerce platform with a mobile-first UI.",
+          "order": 0
+        },
+        {
+          "id": 44,
+          "text": "Built advanced product pages with multi-image galleries, zoom, and dynamic specifications.",
+          "order": 1
+        },
+        {
+          "id": 45,
+          "text": "Implemented smart cart, checkout, COD, and online payments.",
+          "order": 2
+        },
+        {
+          "id": 46,
+          "text": "Customized Django Admin dashboard using inlines to efficiently manage products and inventory.",
+          "order": 3
+        },
+        {
+          "id": 47,
+          "text": "Built an automated fraud detection engine using Steadfast API and blacklists.",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "number": "03",
+      "title": "BrainSpace AI",
+      "category": "Mental Health Conversational Agent",
+      "tools": "LangChain, LangGraph, PyTorch, Gemini API, Django",
+      "image_url": "/media/projects/615750723-0b9617d8-7d13-42cd-970f-ec0b417944be.png",
+      "link": "https://github.com/nahidularafat/AI-Mental-Health-Agent-Clinical-Assessment-Tool",
+      "order": 2,
+      "bullets": [
+        {
+          "id": 48,
+          "text": "Engineered an intelligent ReAct-based conversational agent using LangGraph and Gemini API.",
+          "order": 0
+        },
+        {
+          "id": 49,
+          "text": "Built a custom deep learning inference layer using PyTorch to analyze clinical patterns and predict stress levels.",
+          "order": 1
+        },
+        {
+          "id": 50,
+          "text": "Architected a microservices backend combining Django for core functionalities and REST API for low-latency inference.",
+          "order": 2
+        },
+        {
+          "id": 51,
+          "text": "Integrated Twilio API for emergency alerts upon detection of high-risk user sentiment.",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "number": "04",
+      "title": "BUBT Bus Tracker",
+      "category": "Cross-Platform Mobile App",
+      "tools": "Flutter, Dart, Firebase, Google Maps API",
+      "image_url": "/media/projects/bubt_bus_tracker.jpg",
+      "link": "https://github.com/nahidularafat/BUBT_BUS_TRACKER-",
+      "order": 3,
+      "bullets": [
+        {
+          "id": 52,
+          "text": "Developed a cross-platform bus tracking application using Flutter.",
+          "order": 0
+        },
+        {
+          "id": 53,
+          "text": "Integrated Google Maps API for live bus locations and map-based tracking.",
+          "order": 1
+        },
+        {
+          "id": 54,
+          "text": "Implemented Firebase Auth and Firestore for real-time data synchronization.",
+          "order": 2
+        },
+        {
+          "id": 55,
+          "text": "Built real-time bus status updates with dynamic UI rendering.",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "number": "05",
+      "title": "BARAQA_BIN",
+      "category": "AI-IoT Smart Bin Startup",
+      "tools": "C++, Python, Django, YOLOv8, ESP32-CAM, React.js, MySQL, FastAPI, RFID",
+      "image_url": "/media/projects/baraqa_bin.png",
+      "link": "",
+      "order": 4,
+      "bullets": [
+        {
+          "id": 56,
+          "text": "Bangladesh's waste crisis is not a knowledge problem \u2014 it is a habit problem. We decided to solve it from the very root: childhood.",
+          "order": 0
+        },
+        {
+          "id": 57,
+          "text": "If a child learns to dispose waste correctly from an early age, that behavior stays for life. When an entire generation grows up with this habit, Bangladesh will not need enforcement \u2014 cleanliness will simply become their nature.",
+          "order": 1
+        },
+        {
+          "id": 58,
+          "text": "BARAQA_BIN makes this possible. Students earn reward points every time they use the correct bin. A live leaderboard creates healthy daily competition.",
+          "order": 2
+        },
+        {
+          "id": 59,
+          "text": "Achievement badges like \"Eco Warrior\" celebrate consistency. Monthly rewards include canteen discounts and tuition fee waivers \u2014 making responsible behavior genuinely worthwhile.",
+          "order": 3
+        },
+        {
+          "id": 60,
+          "text": "We collaborate with schools to make this a natural daily routine \u2014 not an extra activity. One habit. One generation. One clean Bangladesh.",
+          "order": 4
+        }
+      ]
+    }
+  ],
+  "career": [
+    {
+      "id": 8,
+      "entry_type": "job",
+      "title": "Software Developer",
+      "organization": "Ondrobit \u2014 ondrobit.com",
+      "org_url": "https://ondrobit.com/",
+      "period": "Present",
+      "description": "Developing and maintaining RESTful backend APIs using Django and Python for a live e-commerce platform. Contributing to database schema design and integration, improving query efficiency for product and order management modules. Collaborating with a remote team to ship maintainable, scalable features on a regular release cycle.",
+      "order": 0,
+      "achievements": []
+    },
+    {
+      "id": 9,
+      "entry_type": "education",
+      "title": "B.Sc. in Computer Science & Engineering",
+      "organization": "Bangladesh University of Business & Technology (BUBT)",
+      "org_url": "",
+      "period": "2022-2026",
+      "description": "Computer Science graduate. Gained comprehensive knowledge in OOP, Data Structures & Algorithms, and modern web development architectures.",
+      "order": 1,
+      "achievements": []
+    },
+    {
+      "id": 10,
+      "entry_type": "achievements",
+      "title": "Achievements & Competitions",
+      "organization": "Hackathons & Olympiads",
+      "org_url": "",
+      "period": "",
+      "description": "",
+      "order": 2,
+      "achievements": [
+        {
+          "id": 21,
+          "highlight": "Top 10 of 300+ Teams Nationwide, Eco Leaders Training Program",
+          "description": "organized by The Earth Society, funded by the British High Commission",
+          "order": 0
+        },
+        {
+          "id": 22,
+          "highlight": "Champion, Climate Smart Business Transformation Category",
+          "description": "Youth-Led Sustainability Action Research 2026 Pitch Day, an initiative by ActionAid Bangladesh & SustainLaunch Labs",
+          "order": 1
+        },
+        {
+          "id": 23,
+          "highlight": "2nd Runners-Up, Impact Launch Night 2026",
+          "description": "organized by SustainLaunch Labs",
+          "order": 2
+        },
+        {
+          "id": 24,
+          "highlight": "Champion, Engineering Olympiad 2025",
+          "description": "Bangladesh University of Business & Technology (BUBT)",
+          "order": 3
+        },
+        {
+          "id": 25,
+          "highlight": "Top 20 Finalist, Green Innovation 2025",
+          "description": "an initiative by ActionAid Bangladesh",
+          "order": 4
+        },
+        {
+          "id": 26,
+          "highlight": "Finalist, InnovateX Hackathon 2025",
+          "description": "organized by Programming Hero",
+          "order": 5
+        },
+        {
+          "id": 27,
+          "highlight": "Qualified, Innovation World Cup 2026 (Indonesia)",
+          "description": "",
+          "order": 6
+        },
+        {
+          "id": 28,
+          "highlight": "Round 3 Qualifier, Hult Prize 2026",
+          "description": "",
+          "order": 7
+        },
+        {
+          "id": 29,
+          "highlight": "3\u00c3\u2014 ICPC Contest Participant; 3\u00c3\u2014 Qualifier, BUBT Intra-University Programming Contest (BIUPC)",
+          "description": "",
+          "order": 8
+        },
+        {
+          "id": 30,
+          "highlight": "Solved 500+ programming problems",
+          "description": "across Codeforces, CodeChef, and VJudge",
+          "order": 9
+        }
+      ]
+    }
+  ],
+  "aboutSkills": [
+    {
+      "id": 7,
+      "title": "Full-Stack Engineering",
+      "description": "Specializing in Python, Django, FastAPI, and React. Experienced in building scalable microservices and comprehensive web platforms from scratch.",
+      "order": 0
+    },
+    {
+      "id": 8,
+      "title": "AI & Machine Learning",
+      "description": "Proficient in integrating LLMs (LangChain, Gemini API) and architecting computer vision pipelines using PyTorch for intelligent, automated products.",
+      "order": 1
+    },
+    {
+      "id": 9,
+      "title": "Algorithms & Problem Solving",
+      "description": "Strong foundation in data structures and algorithms with 500+ programming problems solved across Codeforces, CodeChef, and VJudge.",
+      "order": 2
+    }
+  ],
+  "expertiseAreas": [
+    {
+      "id": 7,
+      "title": "FRONTEND",
+      "subtitle": "Interface",
+      "description": "Crafting responsive, mobile-first user interfaces with HTML, CSS, Tailwind CSS, Bootstrap, JavaScript, and React.js \u00e2\u20ac\u201d turning designs into fast, polished experiences across devices.",
+      "tags": "React.js, JavaScript, Tailwind CSS, Bootstrap, HTML / CSS",
+      "tags_list": [
+        "React.js",
+        "JavaScript",
+        "Tailwind CSS",
+        "Bootstrap",
+        "HTML / CSS"
+      ],
+      "order": 0
+    },
+    {
+      "id": 8,
+      "title": "BACKEND",
+      "subtitle": "Engineering",
+      "description": "Building robust, scalable REST APIs and full-stack web applications with Python, Django, and FastAPI \u00e2\u20ac\u201d from architecture to deployment on Linux/cPanel environments.",
+      "tags": "Python, Django, FastAPI, REST API, MySQL, SQLite, Firebase, Git",
+      "tags_list": [
+        "Python",
+        "Django",
+        "FastAPI",
+        "REST API",
+        "MySQL",
+        "SQLite",
+        "Firebase",
+        "Git"
+      ],
+      "order": 1
+    },
+    {
+      "id": 9,
+      "title": "AI / ML",
+      "subtitle": "Intelligence",
+      "description": "Designing LLM-powered agents, computer vision pipelines, and deep learning models \u00e2\u20ac\u201d bridging research-grade ideas to production-ready systems using modern AI stacks.",
+      "tags": "LangChain, LangGraph, PyTorch, YOLOv8, Scikit-learn, Pandas, NumPy, Gemini API, Ollama",
+      "tags_list": [
+        "LangChain",
+        "LangGraph",
+        "PyTorch",
+        "YOLOv8",
+        "Scikit-learn",
+        "Pandas",
+        "NumPy",
+        "Gemini API",
+        "Ollama"
+      ],
+      "order": 2
+    }
+  ],
+  "techCategories": [
+    {
+      "id": 15,
+      "title": "Backend & APIs",
+      "order": 0,
+      "techs": [
+        {
+          "id": 65,
+          "name": "Django",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+          "color": "#22C55E",
+          "order": 0
+        },
+        {
+          "id": 66,
+          "name": "Django REST Framework",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+          "color": "#22C55E",
+          "order": 1
+        },
+        {
+          "id": 67,
+          "name": "FastAPI",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
+          "color": "#22C55E",
+          "order": 2
+        },
+        {
+          "id": 68,
+          "name": "Python",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "color": "#3B82F6",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "title": "Frontend & Data Apps",
+      "order": 1,
+      "techs": [
+        {
+          "id": 69,
+          "name": "React",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+          "color": "#38BDF8",
+          "order": 0
+        },
+        {
+          "id": 70,
+          "name": "Streamlit",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "color": "#EF4444",
+          "order": 1
+        },
+        {
+          "id": 71,
+          "name": "JavaScript",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+          "color": "#F59E0B",
+          "order": 2
+        },
+        {
+          "id": 72,
+          "name": "HTML5",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+          "color": "#F97316",
+          "order": 3
+        },
+        {
+          "id": 73,
+          "name": "CSS3",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+          "color": "#38BDF8",
+          "order": 4
+        },
+        {
+          "id": 74,
+          "name": "Bootstrap",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+          "color": "#7C3AED",
+          "order": 5
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "title": "IoT & Embedded Systems",
+      "order": 2,
+      "techs": [
+        {
+          "id": 75,
+          "name": "Arduino",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg",
+          "color": "#38BDF8",
+          "order": 0
+        },
+        {
+          "id": 76,
+          "name": "Raspberry Pi",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original.svg",
+          "color": "#EF4444",
+          "order": 1
+        },
+        {
+          "id": 77,
+          "name": "IoT",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+          "color": "#A855F7",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "title": "Languages",
+      "order": 3,
+      "techs": [
+        {
+          "id": 78,
+          "name": "Java",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+          "color": "#EC4899",
+          "order": 0
+        },
+        {
+          "id": 79,
+          "name": "C++",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+          "color": "#A855F7",
+          "order": 1
+        },
+        {
+          "id": 80,
+          "name": "C#",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg",
+          "color": "#8B5CF6",
+          "order": 2
+        },
+        {
+          "id": 81,
+          "name": "C",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
+          "color": "#8B5CF6",
+          "order": 3
+        },
+        {
+          "id": 82,
+          "name": "Dart",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg",
+          "color": "#38BDF8",
+          "order": 4
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "title": "Mobile & Desktop",
+      "order": 4,
+      "techs": [
+        {
+          "id": 83,
+          "name": "Flutter",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg",
+          "color": "#38BDF8",
+          "order": 0
+        },
+        {
+          "id": 84,
+          "name": ".NET",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg",
+          "color": "#8B5CF6",
+          "order": 1
+        },
+        {
+          "id": 85,
+          "name": "JavaFX",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+          "color": "#EC4899",
+          "order": 2
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "title": "AI / ML & Data",
+      "order": 5,
+      "techs": [
+        {
+          "id": 86,
+          "name": "TensorFlow",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+          "color": "#F97316",
+          "order": 0
+        },
+        {
+          "id": 87,
+          "name": "Pandas",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+          "color": "#8B5CF6",
+          "order": 1
+        },
+        {
+          "id": 88,
+          "name": "NumPy",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+          "color": "#38BDF8",
+          "order": 2
+        },
+        {
+          "id": 89,
+          "name": "Matplotlib",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+          "color": "#3B82F6",
+          "order": 3
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "title": "Databases & Tools",
+      "order": 6,
+      "techs": [
+        {
+          "id": 90,
+          "name": "MySQL",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+          "color": "#38BDF8",
+          "order": 0
+        },
+        {
+          "id": 91,
+          "name": "PostgreSQL",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+          "color": "#38BDF8",
+          "order": 1
+        },
+        {
+          "id": 92,
+          "name": "SQLite",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
+          "color": "#38BDF8",
+          "order": 2
+        },
+        {
+          "id": 93,
+          "name": "Firebase",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+          "color": "#F59E0B",
+          "order": 3
+        },
+        {
+          "id": 94,
+          "name": "Git",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+          "color": "#F97316",
+          "order": 4
+        },
+        {
+          "id": 95,
+          "name": "Docker",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+          "color": "#38BDF8",
+          "order": 5
+        },
+        {
+          "id": 96,
+          "name": "Visual Studio Code",
+          "icon_url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+          "color": "#38BDF8",
+          "order": 6
+        }
+      ]
+    }
+  ],
+  "stats": [
+    {
+      "id": 7,
+      "label": "Technologies",
+      "value": "32+",
+      "order": 0
+    },
+    {
+      "id": 8,
+      "label": "Problems Solved",
+      "value": "500+",
+      "order": 1
+    },
+    {
+      "id": 9,
+      "label": "Projects Built",
+      "value": "10+",
+      "order": 2
+    }
+  ]
+}

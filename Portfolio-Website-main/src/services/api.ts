@@ -1,14 +1,4 @@
-import axios from "axios";
-
-const API_BASE_URL = import.meta.env.VITE_API_URL || "http://localhost:8000/api";
-
-const api = axios.create({
-  baseURL: API_BASE_URL,
-  timeout: 10000,
-  headers: {
-    "Content-Type": "application/json",
-  },
-});
+// API calls are now static
 
 // ─── Types ────────────────────────────────────────────────────────────────────
 
@@ -126,16 +116,24 @@ export interface Stat {
   order: number;
 }
 
+import staticData from "../data/staticData.json";
+
 // ─── API calls ────────────────────────────────────────────────────────────────
+// The data is now bundled directly into the frontend to guarantee instant load times
+// on Vercel's Edge network and completely bypass Render's free-tier cold starts.
 
-export const getProfile = () => api.get<Profile>("/profile/").then((r) => r.data);
-export const getSocialLinks = () => api.get<SocialLink[]>("/social-links/").then((r) => r.data);
-export const getProjects = () => api.get<Project[]>("/projects/").then((r) => r.data);
-export const getCareer = () => api.get<CareerEntry[]>("/career/").then((r) => r.data);
-export const getAboutSkills = () => api.get<AboutSkill[]>("/about-skills/").then((r) => r.data);
-export const getExpertiseAreas = () => api.get<ExpertiseArea[]>("/expertise-areas/").then((r) => r.data);
-export const getExpertiseItems = () => api.get<ExpertiseItem[]>("/expertise-items/").then((r) => r.data);
-export const getTechCategories = () => api.get<TechCategory[]>("/tech-categories/").then((r) => r.data);
-export const getStats = () => api.get<Stat[]>("/stats/").then((r) => r.data);
+export const getProfile = () => Promise.resolve(staticData.profile as Profile);
+export const getSocialLinks = () => Promise.resolve(staticData.socialLinks as SocialLink[]);
+export const getProjects = () => Promise.resolve(staticData.projects as Project[]);
+export const getCareer = () => Promise.resolve(staticData.career as CareerEntry[]);
+export const getAboutSkills = () => Promise.resolve(staticData.aboutSkills as AboutSkill[]);
+export const getExpertiseAreas = () => Promise.resolve(staticData.expertiseAreas as ExpertiseArea[]);
+export const getExpertiseItems = () => Promise.resolve(staticData.expertiseAreas as any[]); // Kept for backwards compatibility if needed
+export const getTechCategories = () => Promise.resolve(staticData.techCategories as TechCategory[]);
+export const getStats = () => Promise.resolve(staticData.stats as Stat[]);
 
+// Dummy API export for backward compatibility where axios might be explicitly expected
+const api = {
+  get: () => Promise.resolve({ data: {} })
+};
 export default api;
