@@ -99,9 +99,10 @@ const SocialIcons = () => {
       </div>
       <a
         className="resume-button"
-        href={profile?.resume_url ?? "/resume.pdf"}
+        href={profile?.resume_url || "/resume.pdf"}
         target="_blank"
         rel="noreferrer"
+        data-cursor="disable"
       >
         <HoverLinks text="RESUME" />
         <span>

@@ -16,8 +16,8 @@ const Navbar = () => {
   const { data: profile } = useApi(getProfile);
   const { isLoading } = useLoading();
 
-  const email = profile?.email ?? "nahidularaf@gmail.com";
-  const resumeUrl = profile?.resume_url ?? "/resume.pdf";
+  const email = profile?.email || "nahidularaf@gmail.com";
+  const resumeUrl = profile?.resume_url || "/resume.pdf";
 
   useEffect(() => {
     smoother = ScrollSmoother.create({
@@ -102,6 +102,7 @@ const Navbar = () => {
               target="_blank"
               rel="noreferrer"
               className="nav-resume-btn"
+              data-cursor="disable"
               style={{
                 display: "inline-block",
                 marginLeft: "10px",
